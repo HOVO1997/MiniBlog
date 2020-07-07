@@ -10980,3 +10980,7 @@ body {
   margin-bottom: 30px;
 }
 
+.card {
+  display: inline-block;
+}
+

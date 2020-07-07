@@ -4,8 +4,22 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+
+            @forelse($product as $prod)
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $prod->firm }}</h5>
+                    <p class="card-text">{{ $prod->model }}</p>
+                    <p class="card-text">{{ $prod->price }}</p>
+                    <p class="card-text">{{ $prod->content }}</p>
+                </div>
+            </div>
+            @empty
+                <p>No product</p>
+            @endforelse
+
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,10 +27,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
                 </div>
-            </div>
         </div>
     </div>
 </div>
