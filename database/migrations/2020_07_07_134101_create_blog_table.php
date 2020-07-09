@@ -17,7 +17,7 @@ class CreateBlogTable extends Migration
             $table->id();
             $table->string('firm');
             $table->string('model');
-            $table->float('price');
+            $table->integer('price');
             $table->string('content');
             $table->timestamps();
         });

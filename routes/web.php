@@ -21,6 +21,34 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/home', 'PhoneController@index');
+Route::get('/home', 'HomeController@home_page')->middleware('auth');
+
+Route::get('/home/{id}', 'HomeController@get_prod')->where('id', '[0-9]+');
+
+
+////////////////
+Route::middleware('auth')->group(function (){
+
+Route::get('/admin', 'PhoneController@index');
+
+Route::get('/admin/{id}', 'PhoneController@show')->where('id', '[0-9]+');
+
+Route::get('/admin/create', 'PhoneController@create');
+
+Route::post('/admin/store', 'PhoneController@store');
+
+Route::get('/admin/edit/{id}', 'PhoneController@edit')->where('id', '[0-9]+');
+
+Route::put('/admin/update/{id}', 'PhoneController@update');
+
+Route::delete('/admin/destroy/{id}', 'PhoneController@destroy');
+
+});
+
+
+
+
+
+
 
 

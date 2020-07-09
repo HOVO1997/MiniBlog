@@ -58,6 +58,47 @@ html, body {
 .m-b-md {
     margin-bottom: 30px;
 }
-.card{
+.mini_card{
     display: inline-block;
+    background-color: aliceblue;
+}
+.no_prod{
+    text-align: center;
+}
+.price{
+    color: #3490dc;
+}
+.show_card{
+    display: flex;
+    text-align: center;
+}
+.size {
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+}
+.crt_page{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+}
+.p_cen{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.gallery2 {
+    overflow: hidden;
+    width: 480px;
+}
+.gallery2 .ramka {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.gallery2 img {
+    width: 100%;
+    height: 325px;
 }

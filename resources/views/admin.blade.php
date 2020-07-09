@@ -3,6 +3,8 @@
 @section('content')
 
     <div class="container">
+        <a class="crt_page" href="{{ url('admin/create')  }}">To Create page</a>
+        <p style="font-size: 20px" class="text-success p_cen">{{session('msg') ?? ''}}</p>
         <div class="row justify-content-center">
             <div class="col-md-10 gallery2">
 
@@ -16,6 +18,12 @@
                             <h2 class="card-text price">{{ $prod->price }}</h2>
                             <p class="card-text size">{{ $prod->content }}</p>
                             <a class="btn btn-success" href="{{ url('admin').'/'.$prod->id  }} ">More</a>
+                            <a class="btn btn-warning" href="{{ url('admin/edit').'/'.$prod->id  }}">Change</a>
+                            <form style="display: inline-block" action="{{url("/admin/destroy/{$prod->id}")}}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <input  type="submit" class="btn btn-danger" value="Delete">
+                            </form>
                         </div>
                     </div>
                 @empty

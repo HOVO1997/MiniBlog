@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\PhoneModel;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,5 +25,16 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+    public function home_page()
+    {
+        $product = PhoneModel::all();
+        return response()->view('home', ['product' => $product]);
+    }
+
+    public function get_prod($id){
+        $product = PhoneModel::findorfail($id);
+        return response()->view('show',
+            ['product' => $product]);
     }
 }
