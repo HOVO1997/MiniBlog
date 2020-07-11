@@ -37,8 +37,13 @@ class PhoneController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'select_file' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'select_file' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+             'firm' => 'required|max:255',
+            'model' => 'required|max:255',
+            'price' => 'required|integer|max:99999999',
+            'cont' =>'required|max:255'
         ]);
+
         $image = $request->file('select_file');
         $new_name = rand() . '.' . $image->getClientOriginalExtension();
         $image->move(public_path("images"), $new_name);
@@ -50,6 +55,7 @@ class PhoneController extends Controller
         $product->content = $request->cont;
         $product->image = $new_name;
         $product->save();
+
         return redirect('/admin')
             ->with(['msg'=>'The product has been created successfully!']);
 
@@ -91,7 +97,11 @@ class PhoneController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'select_file' => 'required|image|mimes:jpeg,png,jpg,gif|max:10000'
+            'select_file' => 'required|image|mimes:jpeg,png,jpg,gif|max:10000',
+            'firm' => 'required|max:255',
+            'model' => 'required|max:255',
+            'price' => 'required|integer|max:99999999',
+            'cont' =>'required|max:255'
         ]);
         $image = $request->file('select_file');
         $new_name = rand() . '.' . $image->getClientOriginalExtension();

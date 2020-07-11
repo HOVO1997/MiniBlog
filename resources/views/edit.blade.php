@@ -4,12 +4,14 @@
     <div class="content">
         <div class="title m-b-md">
             Update a product {{ $product->id }}
-            @if(count($errors) > 0)
-                @foreach($errors as $err)
-                <p class="text-danger">{{ $err }}</p>
-                @endforeach
-                @endif
         </div>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                    @foreach ($errors->all() as $error)
+                        <p>{{ $error }}</p>
+                    @endforeach
+            </div>
+        @endif
         <form action="{{url("/admin/update/$product->id")}}" method="POST" enctype="multipart/form-data">
             @method('PUT')
             @csrf

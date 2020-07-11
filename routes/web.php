@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,23 +28,25 @@ Route::get('/home/{id}', 'HomeController@get_prod')->where('id', '[0-9]+');
 
 
 ////////////////
-Route::middleware('auth')->group(function (){
 
-Route::get('/admin', 'PhoneController@index');
+        Route::middleware('auth')->middleware('adminChecker')->group(function (){
 
-Route::get('/admin/{id}', 'PhoneController@show')->where('id', '[0-9]+');
+            Route::get('/admin', 'PhoneController@index');
 
-Route::get('/admin/create', 'PhoneController@create');
+            Route::get('/admin/{id}', 'PhoneController@show')->where('id', '[0-9]+');
 
-Route::post('/admin/store', 'PhoneController@store');
+            Route::get('/admin/create', 'PhoneController@create');
 
-Route::get('/admin/edit/{id}', 'PhoneController@edit')->where('id', '[0-9]+');
+            Route::post('/admin/store', 'PhoneController@store');
 
-Route::put('/admin/update/{id}', 'PhoneController@update');
+            Route::get('/admin/edit/{id}', 'PhoneController@edit')->where('id', '[0-9]+');
 
-Route::delete('/admin/destroy/{id}', 'PhoneController@destroy');
+            Route::put('/admin/update/{id}', 'PhoneController@update');
 
-});
+            Route::delete('/admin/destroy/{id}', 'PhoneController@destroy');
+        });
+
+
 
 
 
