@@ -47,8 +47,8 @@ Route::get('/home/{id}', 'HomeController@get_prod')->where('id', '[0-9]+');
         });
 
 
-//Route::get('/login/{website}', 'Auth\LoginController@LoginSocialite');
-//Route::get('/login/{website}/callback', 'Auth\LoginController@LoginSocialiteCallback');
+Route::get('/login/{website}', 'Auth\LoginController@LoginSocialite');
+Route::get('/login/{website}/callback', 'Auth\LoginController@LoginSocialiteCallback');
 
 
 
