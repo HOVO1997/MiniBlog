@@ -16,7 +16,7 @@
                             <h3 class="card-text">{{ $prod->model }}</h3>
                             <h2 class="card-text price">{{ $prod->price }}</h2>
                             <p class="card-text size">{{ $prod->content }}</p>
-                            <a class="btn btn-success" href="{{ url('admin').'/'.$prod->id  }} ">More</a>
+                            <a class="btn btn-success" href="{{ url('home').'/'.$prod->id  }} ">More</a>
                         </div>
                     </div>
                 @empty
