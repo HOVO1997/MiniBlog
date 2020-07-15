@@ -4,13 +4,14 @@
     <div class="container">
         <div class="row justify-content-center show_card">
             <div class="col-md-8">
-                    <div class="card mini_card " style="width: 18rem;">
+                    <div class="card mini_card " style="width: 25rem;">
                         <img class="card-img-top" src="{{ URL::asset("images/$product->image") }}" alt="image">
                         <div class="card-body">
                             <h2 class="card-title">{{ $product->firm }}</h2>
                             <h3 class="card-text">{{ $product->model }}</h3>
-                            <h2 class="card-text price">{{ $product->price }}</h2>
+                            <h2 class="card-text price">{{ $product->price }}.AMD</h2>
                             <p class="card-text">{{ $product->content }}</p>
+                            <a class="btn btn-info" href="#">Add to Card</a>
                         </div>
                     </div>
 

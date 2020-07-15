@@ -51,7 +51,9 @@ Route::get('/login/{website}', 'Auth\LoginController@LoginSocialite');
 Route::get('/login/{website}/callback', 'Auth\LoginController@LoginSocialiteCallback');
 
 
-
+Route::get('home/basket', function (){
+    return view('basket');
+})->name('basket');
 
 
 

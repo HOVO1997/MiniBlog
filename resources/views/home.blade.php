@@ -14,9 +14,10 @@
                         <div class="card-body">
                             <h2 class="card-title">{{ $prod->firm }}</h2>
                             <h3 class="card-text">{{ $prod->model }}</h3>
-                            <h2 class="card-text price">{{ $prod->price }}</h2>
+                            <h2 class="card-text price">{{ $prod->price }}.AMD</h2>
                             <p class="card-text size">{{ $prod->content }}</p>
                             <a class="btn btn-success" href="{{ url('home').'/'.$prod->id  }} ">More</a>
+                            <a class="btn btn-info" href="#">Add to Card</a>
                         </div>
                     </div>
                 @empty
