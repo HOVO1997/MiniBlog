@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\PhoneModel;
+use Illuminate\Support\Facades\App;
 
 class PhoneController extends Controller
 {
@@ -130,5 +131,11 @@ class PhoneController extends Controller
         PhoneModel::where('id', $id)->delete();
         return redirect('/admin')->with(
             ['msg' => 'The products has been successfully deleted']);
+    }
+
+    public function locale($locale){
+        session(['locale'=> $locale]);
+        App::setLocale($locale);
+        return redirect()->back();
     }
 }

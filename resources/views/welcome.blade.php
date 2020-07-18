@@ -14,15 +14,17 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+
             @if (Route::has('login'))
                 <div class="top-right links">
+                    <a  href="{{route('locale',__('main.set_lang'))}}">{{ __('main.set_lang') }}</a>
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">{{ __('main.home') }}</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">{{ __('main.login') }}</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">{{ __('main.register') }}</a>
                         @endif
                     @endauth
                 </div>
@@ -30,7 +32,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome
+                   {{ __('main.welcome') }}
                 </div>
 
             </div>

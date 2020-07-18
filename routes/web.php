@@ -14,11 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('locale/{locale}','PhoneController@locale')->name('locale');
+
+
+
+
+Route::middleware(['set_locale'])->group(function (){
+
+Auth::routes(['verify' => true]);
+
 Route::get('/', function () {
     return view('welcome');
 });
-
-Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
@@ -45,15 +52,16 @@ Route::get('/home/{id}', 'HomeController@get_prod')->where('id', '[0-9]+');
 
             Route::delete('/admin/destroy/{id}', 'PhoneController@destroy');
         });
+//// Basket
+Route::get('home/basket','BasketController@basket_view')->name('basket_view');
+Route::post('home/{id}','BasketController@basket_add')->name('add_basket');
+Route::post('home/basket/{id}','BasketController@basket_delete')->name('delete_basket');
 
+});
 
 Route::get('/login/{website}', 'Auth\LoginController@LoginSocialite');
 Route::get('/login/{website}/callback', 'Auth\LoginController@LoginSocialiteCallback');
 
-
-Route::get('home/basket', function (){
-    return view('basket');
-})->name('basket');
 
 
 

@@ -11,7 +11,10 @@
                             <h3 class="card-text">{{ $product->model }}</h3>
                             <h2 class="card-text price">{{ $product->price }}.AMD</h2>
                             <p class="card-text">{{ $product->content }}</p>
-                            <a class="btn btn-info" href="#">Add to Card</a>
+                            <form style="display: inline-block" action="{{ route('add_basket', $product) }}" method="POST">
+                                <button type="submit" class="btn btn-info" >Add to Card</button>
+                                @csrf
+                            </form>
                         </div>
                     </div>
 
