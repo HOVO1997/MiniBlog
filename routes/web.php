@@ -17,8 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('locale/{locale}','PhoneController@locale')->name('locale');
 
 
-
-
 Route::middleware(['set_locale'])->group(function (){
 
 Auth::routes(['verify' => true]);

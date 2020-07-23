@@ -17,7 +17,10 @@
 <script>
     export default {
         mounted() {
-            console.log('Component mounted.')
+            window.Echo.channel('test')
+            .listen('PublicChat', (e) => {
+                console.log(e);
+            });
         }
     }
 </script>

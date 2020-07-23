@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
+    @if(session('user.items'))
     <div class="container">
     <div class="links" style="margin-top:20px">
+
         <script src="https://js.stripe.com/v3/"></script>
         <form style="height: 310px;display: flex;justify-content: center;" action="{{route('stripe.store')}}" method="post" id="payment-form">
             @csrf
@@ -26,4 +29,5 @@
         </form>
     </div>
     </div>
+    @endif
 @endsection

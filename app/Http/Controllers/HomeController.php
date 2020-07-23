@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PublicChat;
 use App\PhoneModel;
 use Illuminate\Http\Request;
+
 
 class HomeController extends Controller
 {
@@ -24,7 +26,13 @@ class HomeController extends Controller
      */
     public function index()
     {
+
+        PublicChat::dispatch("Get my message?");
+
+
         return view('home');
+
+
     }
     public function home_page()
     {
