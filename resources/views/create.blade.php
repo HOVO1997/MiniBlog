@@ -24,7 +24,8 @@
         <label for="content">Content</label>
         <textarea style="width: 400px;height: 100px;resize: none;" type="text" name="cont" id="content"  required></textarea><br>
         <hr>
-        <label for="img">Picture<img style="width: 80px;" src="{{ URL::asset("images/upload.png")}}" alt=""></label><br>
+        <label for="img"><img style="width: 80px;" src="{{ URL::asset("images/upload.png")}}" alt=""></label><br>
+        <p>Picture</p>
         <hr>
         <input style="display: none" type="file" name="select_file" id="img"   required>
         <input type="submit" value="Save" class="btn btn-success">

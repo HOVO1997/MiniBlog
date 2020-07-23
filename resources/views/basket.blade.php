@@ -24,27 +24,33 @@
                                     <a class="thumbnail pull-left" href="#"> <img class="media-object" src="{{URL::asset("images/$item->image")}}" style="width: 72px; height: 72px;"> </a>
                                     <div class="media-body">
                                         <h4 class="media-heading">{{$item->firm}}</h4>
-                                        <h5 class="media-heading"> model {{ $item->model }}</h5>
+                                        <h5 class="media-heading"> Model {{ $item->model }}</h5>
                                         <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
                                     </div>
                                 </div></td>
                             <td class="col-sm-1 col-md-1" style="text-align: center">
                                 <input type="email" class="form-control" id="exampleInputEmail1" value="1">
                             </td>
+
                             <td class="col-sm-1 col-md-1 text-center"><strong>{{ $item->price }}.AMD</strong></td>
+
                             <td class="col-sm-1 col-md-1">
-                                    <form style="display: inline-block" action="{{ route('delete_basket', $item->id) }}" method="POST">
-                                        <button type="submit" class="btn btn-danger" >Remove</button>
-                                        @csrf
-                                    </form>
+
                                 </td>
                         </tr>
                         </tbody>
                         @endforeach
                             @endif
+
                     </table>
                     <hr>
-                    <a href="#" style="float: right;margin-right: 10px" class="btn btn-primary">Buy</a>
+                    @if(session('user.items'))
+                    <form style="display: inline-block" action="{{ route('delete_basket', $item->id) }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-danger" >Empty the Basket</button>
+                    </form>
+                    @endif
+                    <a href="{{ route('to_stripe') }}" style="float: right;margin-right: 10px" class="btn btn-primary">Buy</a>
                 </div>
             </div>
         </div>	<script type="text/javascript">

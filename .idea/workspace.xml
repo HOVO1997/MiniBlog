@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3c012ae-5e9f-456f-b21c-e7136b680769" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Mini_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mini_blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BasketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BasketController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PhoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PhoneController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/129874725.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1365214236.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/150033241.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1810585768.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/1821642448.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/2047839989.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/293890954.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/605126414.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/657423384.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/928996451.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/basket.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +36,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="Git.Settings">
@@ -131,6 +145,10 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/cartalyst/stripe" />
     </include_path>
   </component>
   <component name="ProjectId" id="1eMOO6RLNhAOeI6w9CClpfcmRKF" />
@@ -203,7 +221,14 @@
       <workItem from="1595042823038" duration="2765000" />
       <workItem from="1595045951562" duration="3862000" />
       <workItem from="1595052795852" duration="284000" />
-      <workItem from="1595053103261" duration="5112000" />
+      <workItem from="1595053103261" duration="8166000" />
+      <workItem from="1595108828166" duration="1390000" />
+      <workItem from="1595119854153" duration="1541000" />
+      <workItem from="1595227638164" duration="6522000" />
+      <workItem from="1595245110672" duration="2245000" />
+      <workItem from="1595372463624" duration="426000" />
+      <workItem from="1595380319287" duration="192000" />
+      <workItem from="1595477808930" duration="9305000" />
     </task>
     <servers />
   </component>
@@ -215,6 +240,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1600.860@0.0.1600.860" timestamp="1594436399022" />
+    <state x="577" y="342" key="ComposerInitDialogKey" timestamp="1595485937992">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="577" y="342" key="ComposerInitDialogKey/0.0.1600.860@0.0.1600.860" timestamp="1595485937992" />
     <state width="1322" height="297" key="GridCell.Tab.0.bottom" timestamp="1594128297955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -235,14 +264,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="243" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1594435952092" />
-    <state x="635" y="352" key="NewPhpFileDialog" timestamp="1595049062140">
+    <state x="635" y="352" key="NewPhpFileDialog" timestamp="1595484893174">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="635" y="352" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1595049062140" />
-    <state x="495" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1595053106126">
+    <state x="635" y="352" key="NewPhpFileDialog/0.0.1600.860@0.0.1600.860" timestamp="1595484893174" />
+    <state x="495" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1595477807875">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="495" y="252" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1595053106126" />
+    <state x="495" y="252" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1595477807875" />
     <state x="456" y="190" key="run.anything.popup" timestamp="1594436154862">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

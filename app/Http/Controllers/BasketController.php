@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class BasketController extends Controller
 {
+
+private  $i = 0;
     public function basket_view(){
         return view('basket');
     }
@@ -35,11 +37,11 @@ class BasketController extends Controller
 
     public function basket_delete($request){
 
-        for ($i = 0; $i < count(session('user.items'));$i++){
-            if (intval($request) === session('user.items')[$i]->id){
-                session()->forget("user.items.$i");
-                return redirect()->back();
-            }
-        }
+    session()->forget("user.items");
+
+    return redirect()->back();
+
+
     }
 }
+

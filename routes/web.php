@@ -57,13 +57,16 @@ Route::get('home/basket','BasketController@basket_view')->name('basket_view');
 Route::post('home/{id}','BasketController@basket_add')->name('add_basket');
 Route::post('home/basket/{id}','BasketController@basket_delete')->name('delete_basket');
 
+    Route::get('/home/stripe',function (){
+        return view('stripe');
+    })->name('to_stripe');
+
+
+    Route::post('stripe-payment', 'PaymentController@store')->name('stripe.store');
 });
 
 Route::get('/login/{website}', 'Auth\LoginController@LoginSocialite');
 Route::get('/login/{website}/callback', 'Auth\LoginController@LoginSocialiteCallback');
-
-
-
 
 
 

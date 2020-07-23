@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\PhoneModel;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class PhoneController extends Controller
 {
@@ -128,7 +130,11 @@ class PhoneController extends Controller
      */
     public function destroy($id)
     {
+
+        $img = PhoneModel::select('image')->where('id', $id)->get()[0]["image"];
+        $public =  public_path()."\images"."\\$img";
         PhoneModel::where('id', $id)->delete();
+        unlink($public);
         return redirect('/admin')->with(
             ['msg' => 'The products has been successfully deleted']);
     }

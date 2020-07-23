@@ -8,6 +8,7 @@
                 @if(\Illuminate\Support\Facades\Auth::user()->admin == "true")
                     <a class="crt_page" href={{ url('admin') }}>Admin Page</a>
                     @endif
+                    <p style="font-size: 20px" class="text-success p_cen">{{session('msg') ?? ''}}</p>
                 @forelse($product as $prod)
                     <div class="card mini_card ramka" style="width: 18rem;">
                         <img class="card-img-top" src="{{ URL::asset("images/$prod->image") }}" alt="image">
