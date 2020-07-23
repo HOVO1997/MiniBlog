@@ -49,8 +49,10 @@
                         @csrf
                         <button type="submit" class="btn btn-danger" >Empty the Basket</button>
                     </form>
+                        <a href="{{ route('to_stripe') }}" style="float: right;margin-right: 10px" class="btn btn-primary">Buy</a>
+                    @else
+                    <h2>Basket is empty</h2>
                     @endif
-                    <a href="{{ route('to_stripe') }}" style="float: right;margin-right: 10px" class="btn btn-primary">Buy</a>
                 </div>
             </div>
         </div>	<script type="text/javascript">

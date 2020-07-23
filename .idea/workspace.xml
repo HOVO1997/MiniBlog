@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3c012ae-5e9f-456f-b21c-e7136b680769" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Mini_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mini_blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BasketController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BasketController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PhoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PhoneController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/129874725.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1365214236.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/150033241.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1810585768.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1821642448.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/2047839989.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/293890954.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/605126414.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/657423384.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/928996451.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/basket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/basket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/stripe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/stripe.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +207,7 @@
       <workItem from="1595245110672" duration="2245000" />
       <workItem from="1595372463624" duration="426000" />
       <workItem from="1595380319287" duration="192000" />
-      <workItem from="1595477808930" duration="9305000" />
+      <workItem from="1595477808930" duration="10105000" />
     </task>
     <servers />
   </component>
