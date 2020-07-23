@@ -33,8 +33,6 @@ const app = new Vue({
 
 
 
-
-
 // Create a Stripe client.
 var stripe = Stripe('pk_test_51H7F0TLIzvDELGLjE0MuN7lZ860lwGzNUP1xWqW9zwGVmIgtR4aeE5B98m17yIyTM8xw6gdDIqARdoj8BeRqYMmg00cBHz4P01');
 

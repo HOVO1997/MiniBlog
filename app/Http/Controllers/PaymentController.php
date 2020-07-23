@@ -15,7 +15,7 @@ class PaymentController extends Controller
         ]);
 
         $stripe = Stripe::make('sk_test_51H7F0TLIzvDELGLjl5dcMKGVizR1EWAPun9to8tC8QmRLhgnW27NTJ5IpawT9knVmvKF4EnHgkvUyt1PwtWmEcXa00a9PXIyEw', '2020-03-02');
-        $charge = $stripe->charges()->create([
+         $stripe->charges()->create([
             'amount'   => 200,
             'currency' => 'USD',
             'source' => $request->stripeToken,
